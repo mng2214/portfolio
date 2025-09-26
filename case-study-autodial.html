@@ -16,7 +16,8 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+          rel="stylesheet">
 
     <!-- Internal CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -82,36 +83,43 @@
             </div>
         </div>
 
-        <!-- Project Screenshots Carousel -->
-        <div class="screenshots-carousel">
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <div class="screenshot-placeholder">
-                        <i class="fas fa-dashboard"></i>
-                        <span>Admin Dashboard Interface</span>
+        <!-- Carousel Section -->
+        <div class="carousel-section">
+            <!-- Slide 1: AutoDial with DAT Integration -->
+            <div class="carousel-slide active">
+                <div class="screenshot-card">
+                    <div class="screenshot-header">
+                        <h3 class="screenshot-title">AutoDial Load Matching</h3>
+                        <p class="screenshot-description">Integrated with DAT API to fetch loads in real time, with automatic dialing to brokers and centralized truck posting management</p>
                     </div>
-                </div>
-                <div class="carousel-slide">
-                    <div class="screenshot-placeholder">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span>Mobile Management View</span>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <div class="screenshot-placeholder">
-                        <i class="fas fa-chart-bar"></i>
-                        <span>Analytics Dashboard</span>
+                    <div class="screenshot-content">
+                        <div class="screenshot-image-wrapper">
+                            <img src="assets/images/autodial/dashboard.png" alt="AutoDial DAT Integration" class="screenshot-image">
+                        </div>
+                        <div class="screenshot-features">
+                            <div class="screenshot-feature">
+                                <h4>DAT API Integration</h4>
+                                <p>Real-time load search and automatic truck posting via DAT API</p>
+                            </div>
+                            <div class="screenshot-feature">
+                                <h4>Auto Dialing</h4>
+                                <p>System automatically calls brokers for matching loads based on availability</p>
+                            </div>
+                            <div class="screenshot-feature">
+                                <h4>Centralized Dashboard</h4>
+                                <p>View matches, call outcomes, and manage postings from a single screen</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="carousel-nav">
                 <button class="carousel-prev">‹</button>
                 <button class="carousel-next">›</button>
             </div>
             <div class="carousel-dots">
                 <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
             </div>
         </div>
 
@@ -120,7 +128,9 @@
             <h2><i class="fas fa-exclamation-triangle"></i> The Problem</h2>
             <div class="problem-content">
                 <div class="problem-text">
-                    <p>Trucking dispatchers were spending countless hours making manual phone calls to brokers via DAT and CHRW platforms. The lack of automation and centralized oversight caused lost opportunities and inefficiency.</p>
+                    <p>Trucking dispatchers were spending countless hours making manual phone calls to brokers via
+                        DAT and CHRW platforms. The lack of automation and centralized oversight caused lost
+                        opportunities and inefficiency.</p>
                     <ul>
                         <li>Repetitive and time-consuming manual calls to brokers</li>
                         <li>High risk of human errors and missed loads</li>
@@ -145,19 +155,23 @@
                 </div>
             </div>
         </div>
+
         <!-- Solution Section -->
         <div class="case-study-section">
             <h2><i class="fas fa-lightbulb"></i> The Solution</h2>
             <div class="solution-content">
                 <div class="solution-text">
-                    <p>We built an automated dialing and load-management system that integrates directly with DAT and CHRW APIs, powered by Twilio for call automation. The platform prioritizes loads, schedules calls intelligently, and tracks every interaction in real time.</p>
+                    <p>We built an automated dialing and load-management system that integrates directly with DAT
+                        and CHRW APIs, powered by Twilio for call automation. The platform prioritizes loads,
+                        schedules calls intelligently, and tracks every interaction in real time.</p>
 
                     <h3>Key Features</h3>
                     <div class="features-grid">
                         <div class="feature-card">
                             <i class="fas fa-robot"></i>
                             <h4>Automated Calling</h4>
-                            <p>Smart scheduling of broker calls based on load priority, broker availability, and retry policies.</p>
+                            <p>Smart scheduling of broker calls based on load priority, broker availability, and
+                                retry policies.</p>
                         </div>
                         <div class="feature-card">
                             <i class="fas fa-database"></i>
@@ -245,7 +259,9 @@
                     <ul>
                         <li>Load fetcher pulls loads from DAT/CHRW → normalizes → places into queue.</li>
                         <li>Scheduler assigns priority and batches calls with broker rate limits.</li>
-                        <li>Dialer executes calls via Twilio → receives webhook events (answered, voicemail, failed).</li>
+                        <li>Dialer executes calls via Twilio → receives webhook events (answered, voicemail,
+                            failed).
+                        </li>
                         <li>Result handler writes outcomes to PostgreSQL and updates load status.</li>
                         <li>Retry service re-queues failed calls with exponential backoff.</li>
                     </ul>
@@ -285,7 +301,8 @@
                 </div>
 
                 <div class="results-text">
-                    <p>The platform successfully automated the entire broker communication process, significantly boosting dispatcher productivity and load acquisition efficiency.</p>
+                    <p>The platform successfully automated the entire broker communication process, significantly
+                        boosting dispatcher productivity and load acquisition efficiency.</p>
                     <ul>
                         <li>Reduced dispatcher workload from 6 hours to just 30 minutes daily</li>
                         <li>Enabled round-the-clock load acquisition with automated retries</li>
@@ -298,14 +315,13 @@
 
         <!-- Navigation -->
         <div class="case-study-navigation">
-            <a href="index.html#portfolio" class="nav-button next">
+            <a href="case-study-truqbox.html" class="nav-button next">
                 Explore more <i class="fas fa-arrow-right"></i>
             </a>
         </div>
     </div>
 </section>
 
-<!-- Footer (такой же как в index.html) -->
 <!-- Footer -->
 <footer>
     <div class="container">
