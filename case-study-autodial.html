@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' https:;
+    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/ https://www.googletagmanager.com/;
+    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/ https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com/;
+    img-src 'self' data: https:;
+    connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://formspree.io;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autodial</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+    <title>Autodial System Case Study - Artur Mango</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">{}</div>
+                Artur Mango
+            </div>
+            <div class="nav-links">
+                <a href="index.html#about" class="active">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="index.html#contacts">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <div class="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Case Study Content -->
+<section class="case-study">
+    <div class="container">
+        <div class="case-study-header">
+            <a href="index.html#portfolio" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <h1>Autodial System for Brokers</h1>
+            <p class="case-study-subtitle">Business automation solution for trucking industry</p>
+
+            <div class="case-study-meta">
+                <div class="meta-item">
+                    <strong>End user:</strong> Trucking Company
+                </div>
+                <div class="meta-item">
+                    <strong>Duration:</strong> 2 months
+                </div>
+                <div class="meta-item">
+                    <strong>Team:</strong> Solo Developer
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Screenshots Carousel -->
+        <div class="screenshots-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-dashboard"></i>
+                        <span>Admin Dashboard Interface</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Mobile Management View</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Analytics Dashboard</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-prev">‹</button>
+                <button class="carousel-next">›</button>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+
+        <!-- Problem Section -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-exclamation-triangle"></i> The Problem</h2>
+            <div class="problem-content">
+                <div class="problem-text">
+                    <p>Trucking dispatchers were spending countless hours making manual phone calls to brokers via DAT and CHRW platforms. The lack of automation and centralized oversight caused lost opportunities and inefficiency.</p>
+                    <ul>
+                        <li>Repetitive and time-consuming manual calls to brokers</li>
+                        <li>High risk of human errors and missed loads</li>
+                        <li>Limited coverage during business hours only</li>
+                        <li>No centralized history of calls or broker responses</li>
+                        <li>Inefficient load matching and slow reaction times</li>
+                    </ul>
+                </div>
+                <div class="problem-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">4–6 h</div>
+                        <div class="stat-label">Daily manual workload</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">30%</div>
+                        <div class="stat-label">Missed opportunities</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">No SLA</div>
+                        <div class="stat-label">Uncontrolled response times</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Solution Section -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-lightbulb"></i> The Solution</h2>
+            <div class="solution-content">
+                <div class="solution-text">
+                    <p>We built an automated dialing and load-management system that integrates directly with DAT and CHRW APIs, powered by Twilio for call automation. The platform prioritizes loads, schedules calls intelligently, and tracks every interaction in real time.</p>
+
+                    <h3>Key Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>Automated Calling</h4>
+                            <p>Smart scheduling of broker calls based on load priority, broker availability, and retry policies.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-database"></i>
+                            <h4>Real-time Tracking</h4>
+                            <p>Call outcomes, voicemail detection, and broker responses captured instantly.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-sync-alt"></i>
+                            <h4>DAT & CHRW Integration</h4>
+                            <p>Secure token-based API integration with Redis caching and idempotency guarantees.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Analytics Dashboard</h4>
+                            <p>Conversion rates, call performance, broker statistics, and efficiency metrics.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-user-shield"></i>
+                            <h4>Role-based Access</h4>
+                            <p>Separate access levels for managers and dispatchers with full audit logs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Implementation -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-cogs"></i> Technical Implementation</h2>
+            <div class="tech-implementation">
+                <div class="tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="stack-categories">
+                        <div class="stack-category">
+                            <h4>Backend</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Java 17</span>
+                                <span class="tech-tag">Spring Boot 3</span>
+                                <span class="tech-tag">Spring WebFlux</span>
+                                <span class="tech-tag">Eureka</span>
+                                <span class="tech-tag">API Gateway</span>
+                                <span class="tech-tag">Twilio API</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Database</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis (token & cache)</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Integrations</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">DAT API</span>
+                                <span class="tech-tag">CHRW API</span>
+                                <span class="tech-tag">Webhooks</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Infrastructure</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">AWS EC2</span>
+                                <span class="tech-tag">AWS Lambda</span>
+                                <span class="tech-tag">AWS RDS</span>
+                                <span class="tech-tag">Nginx</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Visual</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Thymeleaf</span>
+                                <span class="tech-tag">Spring MVC</span>
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-details">
+                    <h3>Call Flow</h3>
+                    <ul>
+                        <li>Load fetcher pulls loads from DAT/CHRW → normalizes → places into queue.</li>
+                        <li>Scheduler assigns priority and batches calls with broker rate limits.</li>
+                        <li>Dialer executes calls via Twilio → receives webhook events (answered, voicemail, failed).</li>
+                        <li>Result handler writes outcomes to PostgreSQL and updates load status.</li>
+                        <li>Retry service re-queues failed calls with exponential backoff.</li>
+                    </ul>
+
+                    <h3>Reliability & Security</h3>
+                    <ul>
+                        <li>Redis cache for DAT/CHRW tokens with automatic refresh.</li>
+                        <li>Idempotency keys prevent duplicate bookings or calls.</li>
+                        <li>Role-based access control (RBAC) with audit trail of dispatcher actions.</li>
+                        <li>99.9% uptime achieved via Dockerized services on AWS EC2 with Nginx load balancing.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-chart-bar"></i> Results & Impact</h2>
+            <div class="results-content">
+                <div class="results-stats">
+                    <div class="result-card">
+                        <div class="result-number">85%</div>
+                        <div class="result-label">Reduction in manual work</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">24/7</div>
+                        <div class="result-label">Operational capability</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">40%</div>
+                        <div class="result-label">Increase in loads processed</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">99.9%</div>
+                        <div class="result-label">System uptime</div>
+                    </div>
+                </div>
+
+                <div class="results-text">
+                    <p>The platform successfully automated the entire broker communication process, significantly boosting dispatcher productivity and load acquisition efficiency.</p>
+                    <ul>
+                        <li>Reduced dispatcher workload from 6 hours to just 30 minutes daily</li>
+                        <li>Enabled round-the-clock load acquisition with automated retries</li>
+                        <li>Improved load matching accuracy by 60%</li>
+                        <li>Provided scalable multi-tenant architecture for multiple trucking companies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="case-study-navigation">
+            <a href="index.html#portfolio" class="nav-button next">
+                Explore more <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer (такой же как в index.html) -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Artur Mango</h3>
+                <p>Software Engineer crafting digital excellence through innovative solutions and cutting-edge
+                    technology.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contacts">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://linkedin.com/in/arturmango">LinkedIn</a></li>
+                    <li><a href="https://github.com/mng2214">GitHub</a></li>
+                    <li><a href="https://t.me/mngartur">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Artur Mango. All rights reserved. Crafted with passion and precision.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSLS0MGE1"></script>
+
+<!-- JavaScript Files -->
+<script src="js/utils/helpers.js"></script>
+<script src="js/utils/captcha.js"></script>
+
+<script src="js/modules/security.js"></script>
+<script src="js/modules/navigation.js"></script>
+<script src="js/modules/animations.js"></script>
+<script src="js/modules/skills-accordion.js"></script>
+<script src="js/modules/form-handler.js"></script>
+<script src="js/modules/carousel.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,493 @@
+/* TruqBox Case Study Styles */
+.case-study {
+    padding: 8rem 0 4rem;
+    min-height: 100vh;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-primary);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--accent-secondary);
+}
+
+.case-study-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.case-study-header h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.2;
+}
+
+.case-study-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.case-study-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    background: var(--bg-card);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    min-width: 150px;
+}
+
+/* Carousel */
+.screenshots-carousel {
+    margin: 4rem 0;
+    position: relative;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-container {
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 450px;
+}
+
+.carousel-slide {
+    display: none;
+    height: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.7; }
+    to { opacity: 1; }
+}
+
+.screenshot-placeholder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+    color: #10b981;
+    font-size: clamp(3rem, 8vw, 5rem);
+    padding: 2rem;
+    text-align: center;
+}
+
+.screenshot-placeholder span {
+    margin-top: 1.5rem;
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.carousel-prev, .carousel-next {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: all;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #10b981;
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background: #34d399;
+}
+
+/* Case Study Sections */
+.case-study-section {
+    margin: 5rem 0;
+    padding: 0 1rem;
+}
+
+.case-study-section h2 {
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-primary);
+}
+
+.case-study-section h2 i {
+    color: #10b981;
+    font-size: 1.5em;
+}
+
+.problem-content, .solution-content, .results-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.problem-text, .solution-text, .results-text {
+    line-height: 1.7;
+}
+
+.problem-text ul, .solution-text ul, .results-text ul {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.problem-text li, .solution-text li, .results-text li {
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.problem-text li::before, .solution-text li::before, .results-text li::before {
+    content: "▸";
+    color: #10b981;
+    position: absolute;
+    left: -1.2rem;
+}
+
+.problem-stats, .results-stats {
+    display: grid;
+    gap: 1.2rem;
+    align-content: start;
+}
+
+.stat-card, .result-card {
+    background: var(--bg-card);
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover, .result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.1);
+}
+
+.stat-number, .result-number {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.stat-label, .result-label {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.feature-card {
+    background: var(--bg-card);
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(16, 185, 129, 0.1);
+    border-color: #10b981;
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: #10b981;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Technical Implementation */
+.tech-implementation {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.tech-stack h3, .tech-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.stack-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.stack-category {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.stack-category h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #10b981;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.tech-details ul {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.tech-details li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    position: relative;
+}
+
+.tech-details li::before {
+    content: "▸";
+    color: #10b981;
+    position: absolute;
+    left: -1.2rem;
+}
+
+/* Navigation */
+.case-study-navigation {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 2.5rem;
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+    color: var(--bg-primary);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.nav-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .carousel-container {
+        height: 400px;
+    }
+
+    .problem-content, .solution-content, .results-content {
+        gap: 2rem;
+    }
+
+    .stack-categories {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-study {
+        padding: 6rem 0 2rem;
+    }
+
+    .case-study-header {
+        text-align: left;
+    }
+
+    .case-study-meta {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .meta-item {
+        min-width: 120px;
+        padding: 0.8rem 1rem;
+    }
+
+    .problem-content, .solution-content, .results-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .carousel-container {
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    .carousel-nav {
+        padding: 0 1rem;
+    }
+
+    .carousel-prev, .carousel-next {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .stack-category {
+        padding: 1.5rem;
+    }
+
+    .tech-tags {
+        gap: 0.5rem;
+    }
+
+    .tech-tag {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .case-study-section {
+        margin: 3rem 0;
+    }
+
+    .carousel-container {
+        height: 250px;
+    }
+
+    .screenshot-placeholder {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+    .screenshot-placeholder span {
+        font-size: 0.9rem;
+    }
+
+    .nav-button {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 2rem;
+    }
+}
