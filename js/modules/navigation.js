@@ -78,7 +78,35 @@
                 lines[2].style.transform = '';
             }
         }
+        setupSmoothScrolling() {
+            document.querySelectorAll('a[href*="#"]').forEach((anchor) => {
+                anchor.addEventListener('click', (e) => {
+                    const url = new URL(anchor.href, window.location.href);
+                    const samePage = url.pathname === window.location.pathname && url.origin === window.location.origin;
+                    const targetId = url.hash;
+                    if (!samePage || !targetId || targetId === '#') return;
+
+                    e.preventDefault();
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        const headerHeight = this.header?.offsetHeight || 0;
+                        const top = target.offsetTop - headerHeight - 20;
+
+                        // ЗАМЕДЛЕННАЯ ПРОКРУТКА - увеличиваем duration
+                        window.scrollTo({
+                            top,
+                            behavior: 'smooth',
+                            // Добавляем опции для контроля скорости
+                            duration: 1500 // 1.5 секунды вместо стандартных ~0.5
+                        });
+                    }
+
+                    if (this.mobileMenu?.classList.contains('active')) this.closeMobileMenu();
+                });
+            });
+        }
     }
+
 
     w.NavigationManager = NavigationManager;
 })(window);
