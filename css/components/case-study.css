@@ -1,4 +1,4 @@
-/* Case Study Styles */
+/* TruqBox Case Study Styles */
 .case-study {
     padding: 8rem 0 4rem;
     min-height: 100vh;
@@ -27,7 +27,7 @@
 .case-study-header h1 {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--text-primary), var(--accent-primary));
+    background: linear-gradient(135deg, #10b981, #3b82f6);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -98,8 +98,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--bg-primary), var(--bg-card));
-    color: var(--accent-primary);
+    background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+    color: #10b981;
     font-size: clamp(3rem, 8vw, 5rem);
     padding: 2rem;
     text-align: center;
@@ -161,12 +161,12 @@
 }
 
 .dot.active {
-    background: var(--accent-primary);
+    background: #10b981;
     transform: scale(1.2);
 }
 
 .dot:hover {
-    background: var(--accent-secondary);
+    background: #34d399;
 }
 
 /* Case Study Sections */
@@ -185,7 +185,7 @@
 }
 
 .case-study-section h2 i {
-    color: var(--accent-primary);
+    color: #10b981;
     font-size: 1.5em;
 }
 
@@ -212,7 +212,7 @@
 
 .problem-text li::before, .solution-text li::before, .results-text li::before {
     content: "▸";
-    color: var(--accent-primary);
+    color: #10b981;
     position: absolute;
     left: -1.2rem;
 }
@@ -234,13 +234,13 @@
 
 .stat-card:hover, .result-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.1);
 }
 
 .stat-number, .result-number {
     font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 800;
-    background: var(--accent-gradient);
+    background: linear-gradient(135deg, #10b981, #3b82f6);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -277,13 +277,13 @@
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    border-color: var(--accent-primary);
+    box-shadow: 0 15px 30px rgba(16, 185, 129, 0.1);
+    border-color: #10b981;
 }
 
 .feature-card i {
     font-size: 3rem;
-    color: var(--accent-primary);
+    color: #10b981;
     margin-bottom: 1.5rem;
 }
 
@@ -305,29 +305,6 @@
     gap: 3rem;
 }
 
-.architecture-diagram {
-    text-align: center;
-}
-
-.diagram-placeholder {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg-card);
-    border: 2px dashed var(--border-color);
-    border-radius: 15px;
-    color: var(--text-secondary);
-    font-size: 1.2rem;
-}
-
-.diagram-placeholder i {
-    font-size: 4rem;
-    color: var(--accent-primary);
-    margin-bottom: 1rem;
-}
-
 .tech-stack h3, .tech-details h3 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
@@ -336,6 +313,7 @@
 
 .stack-categories {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -349,7 +327,7 @@
 .stack-category h4 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: var(--accent-primary);
+    color: #10b981;
 }
 
 .tech-tags {
@@ -359,7 +337,7 @@
 }
 
 .tech-tag {
-    background: var(--accent-gradient);
+    background: linear-gradient(135deg, #10b981, #3b82f6);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -380,7 +358,7 @@
 
 .tech-details li::before {
     content: "▸";
-    color: var(--accent-primary);
+    color: #10b981;
     position: absolute;
     left: -1.2rem;
 }
@@ -398,7 +376,7 @@
     align-items: center;
     gap: 1rem;
     padding: 1.2rem 2.5rem;
-    background: var(--accent-gradient);
+    background: linear-gradient(135deg, #10b981, #3b82f6);
     color: var(--bg-primary);
     text-decoration: none;
     border-radius: 50px;
@@ -409,7 +387,7 @@
 
 .nav-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px var(--glow-color);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
 }
 
 /* Responsive Design */
@@ -420,6 +398,10 @@
 
     .problem-content, .solution-content, .results-content {
         gap: 2rem;
+    }
+
+    .stack-categories {
+        grid-template-columns: 1fr;
     }
 }
 
