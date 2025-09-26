@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' https:;
+    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/ https://www.googletagmanager.com/;
+    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/ https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com/;
+    img-src 'self' data: https:;
+    connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://formspree.io;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artur Mango - Software Engineer</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">{}</div>
+                Artur Mango
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="active">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contacts">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <div class="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <button class="mobile-menu-close">&times;</button>
+    <div class="mobile-nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contacts">Contact</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">Software Engineer</div>
+                <h1 class="hero-title">Crafting Digital Excellence</h1>
+                <p class="hero-subtitle">7+ years transforming complex ideas into scalable, high-performance software solutions</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">Enterprise Projects</div>
+                        <div class="stat-label">End-to-end delivery experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7+ Years</div>
+                        <div class="stat-label">Professional experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">High-Performance</div>
+                        <div class="stat-label">Architecture focus</div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="#contacts" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <img src="assets/images/profilepic.png" alt="Artur Mango" class="profile-image">
+                    <div class="profile-orbits">
+                        <div class="orbit orbit-1"></div>
+                        <div class="orbit orbit-2"></div>
+                    </div>
+                    <div class="tech-orbits">
+                        <div class="tech-orbit"><i class="fab fa-java"></i></div>
+                        <div class="tech-orbit"><i class="fas fa-leaf"></i></div>
+                        <div class="tech-orbit"><i class="fas fa-database"></i></div>
+                        <div class="tech-orbit"><i class="fas fa-cloud"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">The Architect Behind the Code</h2>
+            <p class="section-subtitle">Passionate about creating elegant solutions to complex problems</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm Artur, a Software Engineer with over 7 years of experience in building robust, scalable
+                    applications. My journey in tech started with a curiosity about how things work, which evolved into
+                    a passion for creating digital solutions that make a difference.</p>
+                <p>I specialize in back-end development, with expertise in Spring framework, cloud architecture, and
+                    system design. My approach combines technical excellence with user-centric design to deliver
+                    products that are both powerful and intuitive.</p>
+
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Clean Code</h4>
+                        <p>Writing maintainable, scalable code following best practices</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>High Performance</h4>
+                        <p>Optimized solutions that deliver exceptional speed</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Security First</h4>
+                        <p>Building with security and privacy as top priorities</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Team Collaboration</h4>
+                        <p>Excellent communication and teamwork skills</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dot dot-red"></div>
+                        <div class="window-dot dot-yellow"></div>
+                        <div class="window-dot dot-green"></div>
+                        <div class="window-title">AboutMe.java</div>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="code-keyword">public class</span> <span class="code-class">AboutMe</span>
+                            {
+                        </div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="code-keyword">private final</span> <span
+                                class="code-type">String</span> name = <span class="code-string">"Artur"</span>;
+                        </div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="code-keyword">private final</span> <span
+                                class="code-type">String</span> role = <span
+                                class="code-string">"Software Engineer"</span>;
+                        </div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="code-keyword">private final</span> <span
+                                class="code-type">int</span> experience = <span class="code-number">7</span>;
+                        </div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="code-keyword">private final</span> <span
+                                class="code-type">String[]</span> specialties = {
+                        </div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="code-string">"Back-End Development"</span>,
+                        </div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="code-string">"Cloud Architecture"</span>,
+                        </div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"System Design"</span>
+                        </div>
+                        <div class="code-line">&nbsp;&nbsp;};</div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="code-keyword">private final</span> <span
+                                class="code-type">String</span> passion = <span class="code-string">"Building solutions that matter"</span>;
+                        </div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">My Skills</span>
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-subtitle">Backend-first engineer focused on scalable, reliable systems</p>
+        </div>
+
+        <div class="skills-grid">
+            <!-- Programming Languages & Frameworks -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming Languages & Frameworks</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <i class="fab fa-java"></i><span class="skill-name">Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-leaf"></i><span class="skill-name">Spring (Boot, MVC, Data, Security)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 93%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fab fa-python"></i><span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-bolt"></i><span class="skill-name">FastAPI</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-database"></i><span class="skill-name">Hibernate (ORM)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-plug"></i><span class="skill-name">WebClient / REST APIs</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-code"></i><span class="skill-name">Thymeleaf</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Databases & Data Technologies -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases & Data Technologies</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <i class="fas fa-database"></i><span class="skill-name">PostgreSQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fab fa-aws"></i><span class="skill-name">Amazon DynamoDB</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-memory"></i><span class="skill-name">Redis</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-table"></i><span class="skill-name">SQL / NoSQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-code"></i><span class="skill-name">JDBC</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-layer-group"></i><span class="skill-name">Data Structures</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Cloud & DevOps -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud & DevOps</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <i class="fas fa-box"></i><span class="skill-name">Docker</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-code-branch"></i><span
+                            class="skill-name">CI/CD (CircleCI, GitHub Actions)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fab fa-linux"></i><span class="skill-name">Linux</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fab fa-aws"></i><span class="skill-name">AWS (core services)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-chart-line"></i><span class="skill-name">Splunk / Grafana</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 78%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Security & Authentication -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Security & Authentication</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <i class="fas fa-key"></i><span class="skill-name">OAuth 2.0</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-user-shield"></i><span class="skill-name">Keycloak</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-shield-alt"></i><span class="skill-name">Spring Security</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Testing & QA -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-vial"></i></div>
+                    <h3>Testing & Quality Assurance</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <i class="fas fa-check"></i><span class="skill-name">JUnit / Mockito</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-plug"></i><span class="skill-name">API Testing (Rest Assured, Postman)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 86%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-clipboard-list"></i><span class="skill-name">BDD (Cucumber) / TDD</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 78%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Methodologies & Tools -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Methodologies & Tools</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <i class="fas fa-sitemap"></i><span class="skill-name">Microservices Architecture</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fab fa-git-alt"></i><span class="skill-name">Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fab fa-jira"></i><span class="skill-name">Jira</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Automation -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Automation</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <i class="fas fa-robot"></i><span class="skill-name">Selenium</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-cogs"></i><span class="skill-name">Automation Scripting</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Other -->
+            <div class="skill-category">
+                <div class="skill-header">
+                    <div class="skill-icon"><i class="fas fa-ellipsis-h"></i></div>
+                    <h3>Other</h3>
+                </div>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <i class="fas fa-server"></i><span class="skill-name">Server Administration</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 78%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <i class="fas fa-network-wired"></i><span class="skill-name">Networking</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 72%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A showcase of my recent work and achievements</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- Autodial System for Brokers -->
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Autodial System for Brokers</h3>
+                    <p>Service for trucking companies that automatically calls brokers based on available loads list.
+                        Integrates with Twilio API for calls, uses PostgreSQL for data storage, and includes a web UI
+                        for configuration and monitoring.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Twilio API</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <a href="#" class="portfolio-link">
+                        View Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Receipt Processing System -->
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-receipt"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Receipt Processing System</h3>
+                    <p>Application for transport companies to upload receipts and automatically calculate expenses.
+                        Uses AWS services for image processing and storage.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">OCR</span>
+                        <span class="tech-tag">AWS S3</span>
+                    </div>
+                    <a href="#" class="portfolio-link">
+                        View Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trading Platform -->
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Trading Platform</h3>
+                    <p>Intermediate service between TradingView and Binance US. Accepts trading signals and
+                        automatically places orders with protective checks and filters.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Framework</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                    <a href="#" class="portfolio-link">
+                        View Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contacts Section -->
+<section id="contacts" class="contacts">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Contacts</span>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Ready to bring your ideas to life? Reach out and let's discuss your project</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <h3>Telegram</h3>
+                <p>Quick messages and updates</p>
+                <a href="https://t.me/mngartur" class="contact-link">
+                    @mngartur <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <p>Professional network</p>
+                <a href="https://linkedin.com/in/arturmango" class="contact-link">
+                    Artur Mango <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p>Check out my code</p>
+                <a href="https://github.com/mng2214" class="contact-link">
+                    mng2214 <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div style="max-width: 600px; margin: 4rem auto 0;">
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/mvgwgvky" method="POST"
+                  novalidate>
+                <label for="nameInput"></label><input id="nameInput" type="text" name="name" class="form-input"
+                                                      placeholder="Your Name" required>
+                <label for="emailInput"></label><input id="emailInput" type="email" name="_replyto" class="form-input"
+                                                       placeholder="Your Email" required>
+                <label for="subjectInput"></label><input id="subjectInput" type="text" name="subject" class="form-input"
+                                                         placeholder="Subject" required>
+                <label for="messageInput"></label><textarea id="messageInput" name="message" class="form-textarea"
+                                                            placeholder="Your Message" required></textarea>
+
+                <!-- CAPTCHA -->
+                <div class="captcha-container">
+                    <div class="captcha-code" id="captchaText">A3B8</div>
+                    <label for="captchaInput"></label><input id="captchaInput" type="text" class="captcha-input"
+                                                             placeholder="Enter CAPTCHA" required>
+                    <button type="button" id="refreshCaptcha" class="contact-link" style="border:none;background:none;">
+                        Refresh
+                    </button>
+                </div>
+
+                <!-- base64 -->
+                <input type="hidden" id="toField" name="to">
+
+                <button id="submitBtn" type="submit" class="form-submit">
+                    <i class="fas fa-envelope"></i> Send Secure Message
+                </button>
+
+                <!-- status -->
+                <div id="formStatus" role="status" aria-live="polite" style="margin-top:1rem;"></div>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!-- Floating Action Buttons -->
+<div class="floating-actions">
+    <a href="https://t.me/mngartur" class="floating-btn telegram">
+        <i class="fab fa-telegram"></i>
+    </a>
+    <a href="#contacts" class="floating-btn email">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Artur Mango</h3>
+                <p>Software Engineer crafting digital excellence through innovative solutions and cutting-edge
+                    technology.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://linkedin.com/in/arturmango">LinkedIn</a></li>
+                    <li><a href="https://github.com/mng2214">GitHub</a></li>
+                    <li><a href="https://t.me/mngartur">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Artur Mango. All rights reserved. Crafted with passion and precision.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSLS0MGE1"></script>
+
+<!-- JavaScript Files -->
+<script src="js/utils/helpers.js"></script>
+<script src="js/utils/captcha.js"></script>
+
+<script src="js/modules/security.js"></script>
+<script src="js/modules/navigation.js"></script>
+<script src="js/modules/animations.js"></script>
+<script src="js/modules/skills-accordion.js"></script>
+<script src="js/modules/form-handler.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

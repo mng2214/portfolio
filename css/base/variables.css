@@ -1,0 +1,41 @@
+/* ===== MODERN VARIABLES ===== */
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #111117;
+    --bg-card: #1a1a24;
+    --bg-gradient: linear-gradient(135deg, #0a0a0f 0%, #151521 100%);
+    --text-primary: #f0f0ff;
+    --text-secondary: #a0a0c0;
+    --accent-primary: #00d4aa;
+    --accent-secondary: #6c63ff;
+    --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    --border-color: #252535;
+    --glow-color: rgba(0, 212, 170, 0.3);
+    --success: #00d4aa;
+    --warning: #ffb74d;
+    --error: #ff6b6b;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-xxl: 4rem;
+
+    /* Border radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 15px;
+    --radius-xl: 50px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 5px 20px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
