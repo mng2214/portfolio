@@ -1,3 +1,4 @@
+// skills-accordion.js — клик по всей категории
 (function (w) {
     function initSkillsAccordion() {
         const mq = window.matchMedia('(max-width: 768px)');
@@ -7,16 +8,24 @@
             categories.forEach(c => c.classList.remove('open'));
 
             categories.forEach(cat => {
-                const header = cat.querySelector('.skill-header');
-                if (!header) return;
+                const newCat = cat.cloneNode(true);
+                cat.parentNode.replaceChild(newCat, cat);
+                const freshCat = newCat;
 
-                header.replaceWith(header.cloneNode(true));
-                const freshHeader = cat.querySelector('.skill-header');
+                freshCat.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'A' || e.target.closest('a')) {
+                        return;
+                    }
 
-                freshHeader.addEventListener('click', () => {
-                    const isOpen = cat.classList.contains('open');
-                    categories.forEach(c => c.classList.remove('open'));
-                    if (!isOpen) cat.classList.add('open');
+                    const isOpen = freshCat.classList.contains('open');
+                    categories.forEach(c => {
+                        if (c !== freshCat) c.classList.remove('open');
+                    });
+                    if (!isOpen) {
+                        freshCat.classList.add('open');
+                    } else {
+                        freshCat.classList.remove('open');
+                    }
                 });
             });
         }

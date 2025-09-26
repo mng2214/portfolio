@@ -102,7 +102,7 @@
 
 /* Skills accordion for mobile */
 @media (max-width: 768px) {
-    .skills .skill-header {
+    .skills .skill-category {
         cursor: pointer;
     }
 
@@ -129,5 +129,10 @@
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .skills .skill-category:hover {
+        transform: none;
+        border-color: var(--border-color);
     }
 }
