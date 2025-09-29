@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' https:;
+    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/ https://www.googletagmanager.com/;
+    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/ https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com/;
+    img-src 'self' data: https:;
+    connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://formspree.io;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruqBox - Receipt Management SaaS | Artur Mango</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">{}</div>
+                Artur Mango
+            </div>
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="index.html#contacts">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <div class="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <button class="mobile-menu-close">&times;</button>
+    <div class="mobile-nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#contacts">Contact</a>
+    </div>
+</div>
+
+<!-- Case Study Content -->
+<section class="case-study">
+    <div class="container">
+        <div class="case-study-header">
+            <a href="index.html#portfolio" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <h1>TruqBox - Receipt Management SaaS</h1>
+            <p class="case-study-subtitle">AI-powered expense tracking solution for trucking companies</p>
+
+            <div class="case-study-meta">
+                <div class="meta-item">
+                    <strong>End user:</strong> Trucking Company
+                </div>
+                <div class="meta-item">
+                    <strong>Duration:</strong> ~1 months (MVP)
+                </div>
+                <div class="meta-item">
+                    <strong>Team:</strong> Solo Developer
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Screenshots Carousel -->
+        <div class="screenshots-carousel">
+            <div class="carousel-container">
+                <!-- Slide 1: Home Screen -->
+                <div class="carousel-slide active">
+                    <div class="screenshot-card">
+                        <div class="screenshot-header">
+                            <h3 class="screenshot-title">Dashboard Overview</h3>
+                            <p class="screenshot-description">Main dashboard showing recent receipts, pending approvals, and quick access to all key features</p>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-image-wrapper">
+                                <img src="assets/images/truqbox/home.png" alt="TruqBox Dashboard" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-features">
+                                <div class="screenshot-feature">
+                                    <h4>Quick Stats</h4>
+                                    <p>Real-time overview of receipts, approvals, and expenses</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>Navigation Menu</h4>
+                                    <p>Easy access to all modules and user management</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>Recent Activity</h4>
+                                    <p>Latest receipts and pending actions at a glance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Receipt Management -->
+                <div class="carousel-slide">
+                    <div class="screenshot-card">
+                        <div class="screenshot-header">
+                            <h3 class="screenshot-title">Receipt Management</h3>
+                            <p class="screenshot-description">Comprehensive interface for uploading, reviewing, and processing expense receipts</p>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-image-wrapper">
+                                <img src="assets/images/truqbox/upload_receipts.png" alt="Receipt Management" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-features">
+                                <div class="screenshot-feature">
+                                    <h4>Batch Processing</h4>
+                                    <p>Handle multiple receipts simultaneously with bulk actions</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>AI Categorization</h4>
+                                    <p>Automatic category assignment based on vendor and amount</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>Status Tracking</h4>
+                                    <p>Visual indicators for pending, approved, and completed receipts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Analytics Dashboard -->
+                <div class="carousel-slide">
+                    <div class="screenshot-card">
+                        <div class="screenshot-header">
+                            <h3 class="screenshot-title">Analytics & Reporting</h3>
+                            <p class="screenshot-description">Advanced analytics with visual charts and export capabilities for financial reporting</p>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-image-wrapper">
+                                <img src="assets/images/truqbox/report.png" alt="Analytics Dashboard" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-features">
+                                <div class="screenshot-feature">
+                                    <h4>Expense Trends</h4>
+                                    <p>Visual charts showing spending patterns over time</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>Category Breakdown</h4>
+                                    <p>Pie charts and graphs for expense categorization</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>Export Options</h4>
+                                    <p>CSV, PDF, and QuickBooks integration for accounting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Mobile Interface -->
+                <div class="carousel-slide">
+                    <div class="screenshot-card">
+                        <div class="screenshot-header">
+                            <h3 class="screenshot-title">Mobile Receipt Capture - Telegram Bot</h3>
+                            <p class="screenshot-description">Driver-friendly mobile interface for quick receipt uploads on the go in Telegram app</p>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-image-wrapper">
+                                <img src="assets/images/truqbox/tg_bot.png" alt="Mobile Interface" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-features">
+                                <div class="screenshot-feature">
+                                    <h4>Camera Integration</h4>
+                                    <p>Direct camera access for instant receipt capture</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>Offline Support</h4>
+                                    <p>Upload receipts even without internet connection</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>Driver Dashboard</h4>
+                                    <p>Simplified interface optimized for mobile use</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-nav">
+                <button class="carousel-prev">‹</button>
+                <button class="carousel-next">›</button>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+            </div>
+        </div>
+
+        <!-- Solution Section -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-lightbulb"></i> The Solution</h2>
+            <div class="solution-content">
+                <div class="solution-text">
+                    <p>TruqBox is a cloud-based SaaS platform that automates receipt management using AI/OCR technology. Drivers snap photos of receipts, and the system automatically extracts, categorizes, and processes expense data in real-time.</p>
+
+                    <h3>Key Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-camera"></i>
+                            <h4>Mobile Receipt Capture</h4>
+                            <p>Drivers upload receipts via mobile app with automatic image enhancement and validation.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-brain"></i>
+                            <h4>AI/OCR Processing</h4>
+                            <p>Automated data extraction for amount, date, vendor, and category with 95%+ accuracy.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Role-based Access</h4>
+                            <p>Multi-tier permissions for drivers, managers, and accountants with audit trails.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Real-time Analytics</h4>
+                            <p>Dashboard with expense trends, category breakdowns, and tax-ready reports.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>Smart Categorization</h4>
+                            <p>AI automatically categorizes expenses (fuel, maintenance, tolls, meals) based on patterns.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-sync-alt"></i>
+                            <h4>QuickBooks Integration</h4>
+                            <p>Seamless sync with accounting software for automated bookkeeping.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Implementation -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-cogs"></i> Technical Implementation</h2>
+            <div class="tech-implementation">
+                <div class="tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="stack-categories">
+                        <div class="stack-category">
+                            <h4>Backend</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Java 21</span>
+                                <span class="tech-tag">Spring Boot 3</span>
+                                <span class="tech-tag">Spring Security</span>
+                                <span class="tech-tag">Spring Data JPA</span>
+                                <span class="tech-tag">WebFlux</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Database & Cache</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Flyway Migrations</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>AI/OCR & Storage</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Google Vision API</span>
+                                <span class="tech-tag">AWS S3</span>
+                                <span class="tech-tag">ImageMagick</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Authentication</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Keycloak</span>
+                                <span class="tech-tag">OAuth 2.0</span>
+                                <span class="tech-tag">Telegram Login</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Infrastructure</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Docker Compose</span>
+                                <span class="tech-tag">AWS EC2</span>
+                                <span class="tech-tag">Nginx</span>
+                                <span class="tech-tag">SSL/TLS</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Frontend</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Thymeleaf</span>
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-details">
+                    <h3>System Architecture</h3>
+                    <ul>
+                        <li>Microservices architecture with API Gateway pattern</li>
+                        <li>JWT-based authentication with Keycloak identity provider</li>
+                        <li>Asynchronous processing for OCR tasks using message queues</li>
+                        <li>Redis cache for frequently accessed expense data and user sessions</li>
+                        <li>S3-compatible storage for receipt images with lifecycle policies</li>
+                    </ul>
+
+                    <h3>Receipt Processing Flow</h3>
+                    <ul>
+                        <li>Driver uploads receipt image → stored in S3 bucket</li>
+                        <li>OCR service processes image → extracts text and data fields</li>
+                        <li>AI categorization engine analyzes vendor and amount patterns</li>
+                        <li>Data validation and normalization for accounting standards</li>
+                        <li>Real-time dashboard updates and notification triggers</li>
+                    </ul>
+
+                    <h3>Security & Compliance</h3>
+                    <ul>
+                        <li>End-to-end encryption for sensitive financial data</li>
+                        <li>GDPR-compliant data handling and retention policies</li>
+                        <li>RBAC with fine-grained permissions for multi-tenant isolation</li>
+                        <li>Audit logging for all financial transactions and user actions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-chart-bar"></i> Results & Impact</h2>
+            <div class="results-content">
+                <div class="results-stats">
+                    <div class="result-card">
+                        <div class="result-number">92%</div>
+                        <div class="result-label">Reduction in manual data entry</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">24h</div>
+                        <div class="result-label">Reimbursement processing</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">45%</div>
+                        <div class="result-label">Faster expense reporting</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">99.5%</div>
+                        <div class="result-label">OCR accuracy rate</div>
+                    </div>
+                </div>
+
+                <div class="results-text">
+                    <p>TruqBox transformed expense management for small to medium trucking companies, providing enterprise-grade automation at an affordable SaaS price point.</p>
+                    <ul>
+                        <li>Reduced administrative overhead from 15 hours to 1 hour per truck monthly</li>
+                        <li>Eliminated paper receipt storage with digital archiving compliance</li>
+                        <li>Improved driver satisfaction with instant receipt submission and faster payments</li>
+                        <li>Enabled real-time expense tracking for better financial decision-making</li>
+                        <li>Scalable architecture supporting multiple companies with data isolation</li>
+                    </ul>
+
+                    <h3>Future Roadmap</h3>
+                    <p>The MVP success positioned TruqBox for expansion into full Transportation Management System (TMS) capabilities, including dispatch automation, load tracking, and advanced analytics for small US-based trucking companies.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="case-study-navigation">
+            <a href="case-study-autotrading.html" class="nav-button next">
+                Explore more <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Artur Mango</h3>
+                <p>Software Engineer crafting digital excellence through innovative solutions and cutting-edge technology.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contacts">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://linkedin.com/in/arturmango">LinkedIn</a></li>
+                    <li><a href="https://github.com/mng2214">GitHub</a></li>
+                    <li><a href="https://t.me/mngartur">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Artur Mango. All rights reserved. Crafted with passion and precision.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSLS0MGE1"></script>
+
+<!-- JavaScript Files -->
+<script src="js/utils/helpers.js"></script>
+<script src="js/utils/captcha.js"></script>
+
+<script src="js/modules/security.js"></script>
+<script src="js/modules/navigation.js"></script>
+<script src="js/modules/animations.js"></script>
+<script src="js/modules/skills-accordion.js"></script>
+<script src="js/modules/form-handler.js"></script>
+<script src="js/modules/carousel.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

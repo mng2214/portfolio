@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' https:;
+    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/ https://www.googletagmanager.com/;
+    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com/ https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com/;
+    img-src 'self' data: https:;
+    connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://formspree.io;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Trading Bot</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">{}</div>
+                Artur Mango
+            </div>
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="index.html#contacts">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <div class="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <button class="mobile-menu-close">&times;</button>
+    <div class="mobile-nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#contacts">Contact</a>
+    </div>
+</div>
+<!-- Case Study Content -->
+<section class="case-study">
+    <div class="container">
+        <div class="case-study-header">
+            <a href="index.html#portfolio" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <h1>TradingView Auto-Trading Bot</h1>
+            <p class="case-study-subtitle">Python-based algorithmic trading system for real-time execution</p>
+
+            <div class="case-study-meta">
+                <div class="meta-item">
+                    <strong>End user:</strong> Myself
+                </div>
+                <div class="meta-item">
+                    <strong>Duration:</strong> ~2 weeks
+                </div>
+                <div class="meta-item">
+                    <strong>Team:</strong> Solo Developer
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Screenshots Carousel -->
+        <div class="screenshots-carousel">
+            <div class="carousel-container">
+                <!-- Slide 1: TradingView Bot Dashboard -->
+                <div class="carousel-slide active">
+                    <div class="screenshot-card">
+                        <div class="screenshot-header">
+                            <h3 class="screenshot-title">TradingView Bot Dashboard</h3>
+                            <p class="screenshot-description">Centralized panel showing real-time alerts, executed trades, and account performance</p>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-image-wrapper">
+                                <img src="assets/images/trading/tv.png" alt="TradingView Bot Dashboard" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-features">
+                                <div class="screenshot-feature">
+                                    <h4>Live Alerts</h4>
+                                    <p>Streaming TradingView signals integrated directly into the bot</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>Trade Execution</h4>
+                                    <p>Automated order placement with broker API integration</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>Performance Metrics</h4>
+                                    <p>Track win rate, PnL, and strategy efficiency in real time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Multi-Pair Trading Logic -->
+                <div class="carousel-slide">
+                    <div class="screenshot-card">
+                        <div class="screenshot-header">
+                            <h3 class="screenshot-title">Multi-Pair Trading Logic</h3>
+                            <p class="screenshot-description">Python backend handling safe order execution across multiple pairs against USDT on Binance</p>
+                        </div>
+                        <div class="screenshot-content">
+                            <div class="screenshot-image-wrapper">
+                                <img src="assets/images/trading/code.png" alt="Multi-Pair Trading Logic Code" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-features">
+                                <div class="screenshot-feature">
+                                    <h4>Order Handling</h4>
+                                    <p>Supports market buy/sell by cash or quantity with precision controls</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>TradingView Integration</h4>
+                                    <p>Webhook-based execution triggered by custom TradingView alerts</p>
+                                </div>
+                                <div class="screenshot-feature">
+                                    <h4>Risk Management</h4>
+                                    <p>Built-in guards prevent invalid orders and duplicate positions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-prev">‹</button>
+                <button class="carousel-next">›</button>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+            </div>
+        </div>
+
+        <!-- Problem Section -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-exclamation-triangle"></i> The Problem</h2>
+            <div class="problem-content">
+                <div class="problem-text">
+                    <p>Manual trading based on TradingView signals was slow and error-prone. Traders often missed optimal entry/exit points, and execution discipline suffered due to delays and emotional decision-making.</p>
+                    <ul>
+                        <li>Slow manual order execution missing critical market opportunities</li>
+                        <li>Emotional trading leading to inconsistent strategy implementation</li>
+                        <li>Human errors in order sizing and position management</li>
+                        <li>Inability to trade 24/7 across multiple timeframes and assets</li>
+                        <li>Lack of systematic risk management and trade documentation</li>
+                    </ul>
+                </div>
+                <div class="problem-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">2–5 min</div>
+                        <div class="stat-label">Manual execution delay</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15%</div>
+                        <div class="stat-label">Missed trade opportunities</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">High</div>
+                        <div class="stat-label">Emotional decision impact</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution Section -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-lightbulb"></i> The Solution</h2>
+            <div class="solution-content">
+                <div class="solution-text">
+                    <p>I developed a fully automated Python trading bot that connects TradingView alerts with broker/exchange APIs. The system executes trades in milliseconds, eliminates emotional bias, and provides comprehensive risk management.</p>
+
+                    <h3>Key Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Webhook Listener</h4>
+                            <p>FastAPI service instantly receives TradingView alerts with HMAC authentication security.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h4>Multi-Exchange Support</h4>
+                            <p>Integrated with Binance, Alpaca, Interactive Brokers APIs for flexible trading.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>Strategy-Agnostic</h4>
+                            <p>Works with any TradingView PineScript strategy that can send webhook alerts.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Risk Management</h4>
+                            <p>Automatic stop-loss, take-profit, position sizing, and daily loss limits.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-database"></i>
+                            <h4>Trade Logging</h4>
+                            <p>Comprehensive trade history stored in PostgreSQL with performance analytics.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-bell"></i>
+                            <h4>Real-time Alerts</h4>
+                            <p>Telegram/Discord notifications for trade execution and system events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Implementation -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-cogs"></i> Technical Implementation</h2>
+            <div class="tech-implementation">
+                <div class="tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="stack-categories">
+                        <div class="stack-category">
+                            <h4>Backend & Core</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python 3.11</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">WebSocket</span>
+                                <span class="tech-tag">Asyncio</span>
+                                <span class="tech-tag">Pandas</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Exchange Integrations</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Binance API</span>
+                                <span class="tech-tag">Alpaca API</span>
+                                <span class="tech-tag">Interactive Brokers</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Database & Storage</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Infrastructure</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Docker Compose</span>
+                                <span class="tech-tag">AWS EC2</span>
+                                <span class="tech-tag">Nginx</span>
+                                <span class="tech-tag">SSL/TLS</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Monitoring & Comms</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Telegram Bot API</span>
+                                <span class="tech-tag">Discord Webhooks</span>
+                                <span class="tech-tag">Prometheus</span>
+                                <span class="tech-tag">Grafana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-details">
+                    <h3>Trading Flow Architecture</h3>
+                    <ul>
+                        <li>TradingView PineScript strategy generates signals → sends HTTPS webhook alerts</li>
+                        <li>FastAPI webhook endpoint validates and authenticates incoming alerts</li>
+                        <li>Order manager processes signals → calculates position size and risk parameters</li>
+                        <li>Exchange API connector executes market/limit orders with error handling</li>
+                        <li>WebSocket streams provide real-time market data and order updates</li>
+                        <li>PostgreSQL database logs all trades, executions, and performance metrics</li>
+                    </ul>
+
+                    <h3>Risk Management System</h3>
+                    <ul>
+                        <li>Dynamic position sizing based on account equity and risk tolerance</li>
+                        <li>Automatic stop-loss and take-profit order placement</li>
+                        <li>Daily/weekly loss limits with automatic trading suspension</li>
+                        <li>Maximum drawdown protection and correlation risk controls</li>
+                        <li>Real-time P&L monitoring with emergency stop mechanisms</li>
+                    </ul>
+
+                    <h3>Security & Reliability</h3>
+                    <ul>
+                        <li>HMAC authentication for all TradingView webhook requests</li>
+                        <li>API key encryption and secure credential storage</li>
+                        <li>Automatic reconnection logic for WebSocket streams</li>
+                        <li>Comprehensive error handling and exception recovery</li>
+                        <li>24/7 monitoring with automatic restart on failure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="case-study-section">
+            <h2><i class="fas fa-chart-bar"></i> Results & Impact</h2>
+            <div class="results-content">
+                <div class="results-stats">
+                    <div class="result-card">
+                        <div class="result-number">500-750ms</div>
+                        <div class="result-label">Order execution time</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">100%</div>
+                        <div class="result-label">Strategy consistency</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">24/7</div>
+                        <div class="result-label">Trading operation</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">0%</div>
+                        <div class="result-label">Emotional errors</div>
+                    </div>
+                </div>
+
+                <div class="results-text">
+                    <p>The automated trading bot transformed discretionary trading into systematic execution, providing institutional-grade automation for retail traders.</p>
+                    <ul>
+                        <li>Reduced order execution time from minutes to under 200 milliseconds</li>
+                        <li>Eliminated emotional trading and human execution errors completely</li>
+                        <li>Enabled 24/7 trading across multiple strategies and asset classes</li>
+                        <li>Provided complete audit trail and performance analytics for strategy optimization</li>
+                        <li>Scalable architecture supporting multiple traders and strategies simultaneously</li>
+                    </ul>
+
+                    <h3>Performance Metrics</h3>
+                    <p>The system maintained 99.9% uptime with zero data loss, executing thousands of trades with perfect consistency between backtested strategies and live performance.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="case-study-navigation">
+            <a href="case-study-autodial.html" class="nav-button next">
+                Explore more <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Artur Mango</h3>
+                <p>Software Engineer crafting digital excellence through innovative solutions and cutting-edge technology.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contacts">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <ul class="footer-links">
+                    <li><a href="https://linkedin.com/in/arturmango">LinkedIn</a></li>
+                    <li><a href="https://github.com/mng2214">GitHub</a></li>
+                    <li><a href="https://t.me/mngartur">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Artur Mango. All rights reserved. Crafted with passion and precision.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSLS0MGE1"></script>
+
+<!-- JavaScript Files -->
+<script src="js/utils/helpers.js"></script>
+<script src="js/utils/captcha.js"></script>
+
+<script src="js/modules/security.js"></script>
+<script src="js/modules/navigation.js"></script>
+<script src="js/modules/animations.js"></script>
+<script src="js/modules/skills-accordion.js"></script>
+<script src="js/modules/form-handler.js"></script>
+<script src="js/modules/carousel.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
