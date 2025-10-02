@@ -58,14 +58,19 @@
         showFieldError(field, message) {
             this.clearFieldError(field);
             field.style.borderColor = 'var(--error)';
-            const errorEl = document.createElement('div');
-            errorEl.className = 'field-error';
-            errorEl.style.color = 'var(--error)';
-            errorEl.style.fontSize = '0.8rem';
-            errorEl.style.marginTop = '0.5rem';
+
+            let errorEl = field.parentNode.querySelector('.field-error');
+            if (!errorEl) {
+                errorEl = document.createElement('div');
+                errorEl.className = 'field-error';
+                errorEl.style.color = 'var(--error)';
+                errorEl.style.fontSize = '0.8rem';
+                errorEl.style.marginTop = '0.5rem';
+                field.parentNode.appendChild(errorEl);
+            }
             errorEl.textContent = message;
-            field.parentNode.appendChild(errorEl);
         }
+
 
         clearFieldError(field) {
             field.style.borderColor = '';
